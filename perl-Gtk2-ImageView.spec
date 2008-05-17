@@ -16,6 +16,7 @@ BuildRequires:	perl-ExtUtils-Depends >= 0.2
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.03
 BuildRequires:	perl-Glib >= 1.140
 BuildRequires:	gtkimageview-devel >= 1.6.0
+BuildRequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description

@@ -7,7 +7,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Summary:	Perl bindings to the GtkImageView image viewer widget
-License:	GPL or Artistic
+License:	LGPLv3+
 Group:	  	Development/GNOME and GTK+
 Source:		http://search.cpan.org/CPAN/authors/id/R/RA/RATCLIFFE/%module-%version.tar.gz
 URL:		http://search.cpan.org/Dist/%module
@@ -29,9 +29,6 @@ Find out more about GtkImageView at http://trac.bjourne.webfactional.com/.
 %{__perl} Makefile.PL INSTALLDIRS=vendor --default
 %make
 
-%check
-%make test
-
 %install
 rm -rf %{buildroot}
 %makeinstall_std
@@ -41,5 +38,10 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-, root, root)
-%doc AUTHORS LICENSE
-%{perl_vendorarch}/%{module}
+%doc AUTHORS README
+%{perl_vendorarch}/Gtk2/Gdk/Pixbuf/Draw/Cache.pod
+%{perl_vendorarch}/Gtk2/ImageView.pm
+%{perl_vendorarch}/Gtk2/ImageView.pod
+%{perl_vendorarch}/Gtk2/ImageView
+%{perl_vendorarch}/auto/Gtk2/ImageView/ImageView.so
+%{_mandir}/man3/*

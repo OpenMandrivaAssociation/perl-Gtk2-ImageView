@@ -1,7 +1,7 @@
 %define module	Gtk2-ImageView
 %define	name	perl-%{module}
-%define	version	0.04
-%define	release	%mkrel 2
+%define	version	0.05
+%define	release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}

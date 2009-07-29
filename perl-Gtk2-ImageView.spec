@@ -1,30 +1,30 @@
-%define module	Gtk2-ImageView
-%define	name	perl-%{module}
-%define	version	0.05
-%define	release	%mkrel 1
+%define upstream_name	 Gtk2-ImageView
+%define	upstream_version 0.05
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Perl bindings to the GtkImageView image viewer widget
 License:	LGPLv3+
 Group:	  	Development/GNOME and GTK+
-Source:		http://search.cpan.org/CPAN/authors/id/R/RA/RATCLIFFE/%module-%version.tar.gz
-URL:		http://search.cpan.org/Dist/%module
+Url:		http://search.cpan.org/Dist/%{upstream_name}
+Source0:    http://search.cpan.org/CPAN/authors/id/R/RA/RATCLIFFE/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-Gtk2 >= 1.140
 BuildRequires:	perl-ExtUtils-Depends >= 0.2
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.03
 BuildRequires:	perl-Glib >= 1.140
 BuildRequires:	gtkimageview-devel >= 1.6.0
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Perl bindings to the GtkImageView image viewer widget
 Find out more about GtkImageView at http://trac.bjourne.webfactional.com/.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor --default

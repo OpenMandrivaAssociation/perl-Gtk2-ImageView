@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Release:    %mkrel 1
 
 Summary:	Perl bindings to the GtkImageView image viewer widget
 License:	LGPLv3+
@@ -46,3 +46,25 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Gtk2/ImageView
 %{perl_vendorarch}/auto/Gtk2/ImageView/ImageView.so
 %{_mandir}/man3/*
+
+
+%changelog
+* Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.50.0-1mdv2010.0
++ Revision: 403230
+- rebuild using %%perl_convert_version
+
+* Fri May 01 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.05-1mdv2010.0
++ Revision: 370128
+- update to new version 0.05
+
+* Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.04-2mdv2009.0
++ Revision: 268519
+- rebuild early 2009.0 package (before pixel changes)
+
+* Sat May 17 2008 Funda Wang <fwang@mandriva.org> 0.04-1mdv2009.0
++ Revision: 208532
+- BR perl-devel
+- fix file list
+- Import source and spec
+- Created package structure for perl-Gtk2-ImageView.
+

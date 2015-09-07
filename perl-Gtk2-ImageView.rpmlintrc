@@ -1,0 +1,4 @@
+addFilter("E: devel-file-in-non-devel-package")
+addFilter("E: library-not-linked-against-libc")
+
+

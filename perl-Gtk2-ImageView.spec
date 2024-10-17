@@ -8,7 +8,7 @@ Release:	7
 Summary:	Perl bindings to the GtkImageView image viewer widget
 License:	LGPLv3+
 Group:		Development/GNOME and GTK+
-Url:		http://search.cpan.org/Dist/%{upstream_name}
+Url:		https://search.cpan.org/Dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RA/RATCLIFFE/%{upstream_name}-%{upstream_version}.tar.gz
 Source100:	perl-Gtk2-ImageView.rpmlintrc
 BuildRequires:	perl-Gtk2 >= 1.140

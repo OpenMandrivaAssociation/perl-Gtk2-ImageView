@@ -11,6 +11,7 @@ Group:		Development/GNOME and GTK+
 Url:		https://search.cpan.org/Dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RA/RATCLIFFE/%{upstream_name}-%{upstream_version}.tar.gz
 Source100:	perl-Gtk2-ImageView.rpmlintrc
+BuildRequires:	make
 BuildRequires:	perl-Gtk2 >= 1.140
 BuildRequires:	perl-ExtUtils-Depends >= 0.2
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.03

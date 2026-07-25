@@ -2,14 +2,14 @@
 %define upstream_version 0.05
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	7
+Version:	%{upstream_version}
+Release:	8
 
 Summary:	Perl bindings to the GtkImageView image viewer widget
 License:	LGPLv3+
 Group:		Development/GNOME and GTK+
-Url:		https://search.cpan.org/Dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RA/RATCLIFFE/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Gtk2-ImageView
+Source0:	https://cpan.metacpan.org/authors/id/R/RA/RATCLIFFE/Gtk2-ImageView-%{upstream_version}.tar.gz
 Source100:	perl-Gtk2-ImageView.rpmlintrc
 BuildRequires:	make
 BuildRequires:	perl-Gtk2 >= 1.140

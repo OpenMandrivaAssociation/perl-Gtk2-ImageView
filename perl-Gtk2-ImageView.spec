@@ -2,7 +2,7 @@
 %define upstream_version 0.05
 Name:		perl-%{upstream_name}
 Version:	0.05
-Release:	2
+Release:	3
 
 Summary:	Perl bindings to the GtkImageView image viewer widget
 License:	LGPLv3+
